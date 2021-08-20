@@ -2,10 +2,12 @@
     @if $odd {
         background-color: $primary-color;
         color: white;
+        height: $section-height;
     }
     @if $even {
         background-color: $secondary-color;
         color: black;
+        height: $section-height;
     }
 }
 

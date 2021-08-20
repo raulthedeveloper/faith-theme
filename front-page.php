@@ -11,30 +11,40 @@
 </section>
 
 
-<section class="d-flex ">
+<section class="d-flex section_cta section_cta-odd">
 
-    <div class="text-box section_cta-odd">
-        
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
-        <div class="btn btn-info">Read More</div>
+    <div class="text-box ">
+        <div class="container">
+            <div class="row">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
+                <div class="btn btn-info">Read More</div>
+            </div>
+
+        </div>
+
     </div>
-    <img width="300" height="400" src="https://images.pexels.com/photos/3724031/pexels-photo-3724031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    <img  src="https://images.pexels.com/photos/3724031/pexels-photo-3724031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
 </section>
 
 
-    <section class="d-flex flex-row-reverse">
-        <div class="text-box section_cta-even ">
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
-            <div class="btn btn-info">Read More</div>
+    <section class="d-flex section_cta  section_cta-even flex-row-reverse">
+        <div class="container">
+            <div class="row">
+                <div class="text-box  ">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
+                    <div class="btn btn-info">Read More</div>
+                </div>
+            </div>
         </div>
-        <img width="300" height="400" src="https://images.pexels.com/photos/3724031/pexels-photo-3724031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+
+        <img  src="https://images.pexels.com/photos/3724031/pexels-photo-3724031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
     </section>
 
 
 <section>
-    <div class="container p-5">
+    <div class="container-fluid p-5">
         <div class="row">
             <h2 class="text-center">Latest Xpress Videos</h2>
             <div class="col-md-4 col-sm-12">

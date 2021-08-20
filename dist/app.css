@@ -7,8 +7,16 @@ html {
   margin: 0;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
 .main-headline {
   background-color: #3C2440;
+}
+.main-headline h1 {
+  padding: 1rem;
+  margin-bottom: 0;
 }
 
 .main-hero {
@@ -23,23 +31,84 @@ html {
   padding: 3rem;
 }
 
+.section_cta img {
+  width: 35%;
+}
+
 .section_cta-odd {
   background-color: #3C2440;
   color: white;
+  height: 50vh;
 }
 
 .section_cta-even {
   background-color: #EEDFEE;
   color: black;
+  height: 50vh;
 }
 
 .card-img {
   height: 300px;
 }
 
+.card-img-overlay {
+  z-index: 5;
+}
+.card-img-overlay .card-title {
+  color: grey;
+}
+
 .blog-section {
   background-color: #3C2440;
   color: white;
+  height: 50vh;
   padding: 3rem;
   text-align: center;
+  min-height: 50vh;
+}
+
+footer {
+  background-color: #3C2440;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.carousel-item img {
+  height: 70vh;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: initial;
+  }
+
+  .text-box {
+    padding: 1rem;
+  }
+
+  .card {
+    margin-bottom: 3rem;
+  }
+
+  .section_cta-odd {
+    flex-direction: column-reverse;
+    height: inherit;
+    width: 100%;
+  }
+  .section_cta-odd img {
+    width: 100%;
+  }
+
+  .section_cta-even {
+    flex-direction: column-reverse;
+    height: inherit;
+    width: 100%;
+  }
+  .section_cta-even img {
+    width: 100%;
+  }
+
+  .carousel-item img {
+    height: 50vh;
+  }
 }

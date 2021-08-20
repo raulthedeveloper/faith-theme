@@ -11,11 +11,19 @@ html{
     margin: 0;
 }
 
+p{
+  font-size: 1.3rem;
+}
 
 
 
 .main-headline{
     background-color: $primary-color;
+
+    h1{
+      padding: 1rem;
+      margin-bottom: 0;
+    }
 }
 
 .main-hero{
@@ -32,6 +40,12 @@ height: 50vh;
 }
 
 
+.section_cta{
+  img{
+    width: 35%;
+  }
+}
+
 
 .section_cta-odd{
     @include section_cta($odd:true,$even:false)
@@ -45,9 +59,75 @@ height: 50vh;
     height: 300px;
 }
 
+.card-img-overlay{
+  z-index: 5;
+  .card-title{
+    color: grey;
+  }
+
+}
+
 
 .blog-section{
    @include section_cta($odd:true,$even:false);
     padding: $section-padding;
     text-align: center;
+    min-height: $section-height;
+}
+
+
+footer{
+  background-color:$primary-color;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+
+
+.carousel-item{
+  img{
+    height: 70vh;
+  }
+
+}
+
+@mixin section_cta_mobile{
+  flex-direction: column-reverse;
+  height: inherit;
+  width: 100%;
+
+
+  img{
+    width: 100%;
+  }
+       }
+
+@media only screen and (max-width: 600px) {
+  p{
+    font-size: initial;
+  }
+  .text-box{
+    padding: 1rem
+  }
+
+  .card{
+    margin-bottom: 3rem;
+  }
+
+  .section_cta-odd{
+   @include section_cta_mobile;
+  }
+
+  .section_cta-even{
+    @include section_cta_mobile;
+
+  }
+
+  .carousel-item{
+    img{
+      height: 50vh;
+    }
+
+  }
 }

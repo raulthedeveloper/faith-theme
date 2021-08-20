@@ -20,6 +20,9 @@ function load_js()
 {
     wp_enqueue_script('jquery');
 
+    wp_register_script('bootstrap_scripts','https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min',null,null,true);
+    wp_enqueue_script('bootstrap_scripts');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'load_css' );
