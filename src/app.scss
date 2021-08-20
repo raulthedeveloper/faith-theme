@@ -1,0 +1,53 @@
+@import './modules/variables.scss',
+'./modules/mixins.scss';
+
+
+html{
+    margin-top: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.main-headline{
+    background-color: $primary-color;
+}
+
+.main-hero{
+    /* background: url('./images/ministry_front.jpg'); */
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+height: 50vh;
+}
+
+
+.text-box{
+    padding: 3rem;
+}
+
+
+
+.section_cta-odd{
+    @include section_cta($odd:true,$even:false)
+}
+
+.section_cta-even{
+    @include section_cta($odd:false,$even:true)
+}
+
+.card-img{
+    height: 300px;
+}
+
+
+.blog-section{
+   @include section_cta($odd:true,$even:false);
+    padding: $section-padding;
+    text-align: center;
+}

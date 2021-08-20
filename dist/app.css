@@ -1,0 +1,45 @@
+html {
+  margin-top: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-headline {
+  background-color: #3C2440;
+}
+
+.main-hero {
+  /* background: url('./images/ministry_front.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.text-box {
+  padding: 3rem;
+}
+
+.section_cta-odd {
+  background-color: #3C2440;
+  color: white;
+}
+
+.section_cta-even {
+  background-color: #EEDFEE;
+  color: black;
+}
+
+.card-img {
+  height: 300px;
+}
+
+.blog-section {
+  background-color: #3C2440;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}

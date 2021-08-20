@@ -5,10 +5,14 @@ function load_css()
     wp_register_style('font-awesome',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css",array(),false,'all');
     wp_enqueue_style('font-awesome') ;
 
-
-
     wp_register_style( 'bootstrap', get_template_directory_uri(  ) . '/css/bootstrap/css/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bootstrap');
+
+
+    wp_register_style( 'sass', get_template_directory_uri(  ) . '/dist/app.css', [], 1, 'all' );
+    wp_enqueue_style( 'sass' );
+
+   
 }
 
 

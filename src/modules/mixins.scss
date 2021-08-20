@@ -1,0 +1,14 @@
+@mixin section_cta($odd,$even) {
+    @if $odd {
+        background-color: $primary-color;
+        color: white;
+    }
+    @if $even {
+        background-color: $secondary-color;
+        color: black;
+    }
+}
+
+// @mixin section-padding {
+//     padding-top:
+// }

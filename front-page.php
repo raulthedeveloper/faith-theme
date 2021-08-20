@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section>
+<section class="text-box">
     <div class="container">
         <div class="row">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad assumenda dolorem eaque esse impedit incidunt ipsam itaque, magni perspiciatis quae, quis quod ratione repellendus repudiandae sint voluptas. Iusto, recusandae.</p>
@@ -12,7 +12,9 @@
 
 
 <section class="d-flex ">
-    <div class="text-box p-3 bg-light">
+
+    <div class="text-box section_cta-odd">
+        
         <h2>Title</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
         <div class="btn btn-info">Read More</div>
@@ -22,7 +24,7 @@
 
 
     <section class="d-flex flex-row-reverse">
-        <div class="text-box p-3 bg-dark text-light">
+        <div class="text-box section_cta-even ">
             <h2>Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
             <div class="btn btn-info">Read More</div>
@@ -74,7 +76,7 @@
 
 </section>
 
-<section>
+<section class="blog-section">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -87,10 +89,27 @@
 </section>
 
 
-<section id="contact">
-   <div>
-       I am the contact sections
+<section id="contact" class="d-flex">
+   <div class="p-3" style="width:50%">
+    <h2 class="text-center">Contact Us</h2>
+   <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
    </div>
+   <iframe  style="width:50%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.922972160594!2d-75.1701375842279!3d41.026941126224344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4891f2307f839%3A0x8181925c53de052a!2sFaith%20to%20Faith%20Ministries!5e0!3m2!1sen!2sus!4v1629426647688!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 
