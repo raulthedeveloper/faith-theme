@@ -1,7 +1,7 @@
 
 
 <?php
-get_template_part('includes/partials/section','head');
+get_template_part('includes/sections/section','head');
 ?>
 
 
@@ -14,7 +14,12 @@ get_template_part('includes/partials/section','head');
     <div class="card-img-overlay">
         <div class="container">
             <div class="row">
-                <button class="btn btn-success">Visit</button>
+                <div class="hero-btn-box ">
+                    <button class="btn">Watch Live Steams</button>
+                    <button class="btn">Get Directions</button>
+                </div>
+
+
             </div>
             <div class="row">
 
@@ -33,7 +38,7 @@ get_template_part('includes/partials/section','head');
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://images.pexels.com/photos/804954/pexels-photo-804954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100" alt="...">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hero_secondary.jpg')" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="https://images.pexels.com/photos/2774551/pexels-photo-2774551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100" alt="...">

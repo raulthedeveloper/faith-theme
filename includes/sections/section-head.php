@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<?php get_template_part('includes/partials/section','navigation') ?>
+<?php get_template_part('includes/sections/section','navigation') ?>
 <section class="main-headline" ">
 <h1 class="text-light display-5 text-center">Faith To Faith Ministries</h1>
 </section>

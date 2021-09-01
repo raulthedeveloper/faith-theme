@@ -1,0 +1,30 @@
+.wp-block-calendar{
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+    
+
+    list-style: none;
+
+    h4{
+        font-size: 30px;
+    }
+
+    td{
+        font-size: initial;
+    }
+   
+    @include widget-header($calendar:true);
+    
+
+    caption{
+        text-align: center;
+    }
+}
+
+#wp-calendar {
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    
+  }

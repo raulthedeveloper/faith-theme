@@ -1,0 +1,83 @@
+@mixin section_cta($odd,$even) {
+    @if $odd {
+        background-color: $primary-color;
+        color: white;
+        height: $section-height;
+    }
+    @if $even {
+        background-color: $secondary-color;
+        color: black;
+        height: $section-height;
+    }
+}
+
+// @mixin section-padding {
+//     padding-top:
+// }
+
+@mixin faith_button{
+    background-color: $button-color;
+    width: 13rem;
+    padding: 0.7rem;
+    color:white;
+
+    &:hover{
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+
+@mixin header-icon($header:false,$footer:false){
+    @if $header {
+        color: black;
+
+        &:hover{
+            color: #404040;
+        }
+        @if $footer {
+            color: $accent-color;
+        }
+    }
+    
+}
+
+@mixin widget-header ($select:false,$calendar:false) {
+    background: $primary-color;
+    color: $widget-text;
+    letter-spacing: 4px;
+    list-style: none;
+    h4{
+        border-bottom: solid 1px;
+        padding-bottom: .5rem;
+        font-size: 2vw;
+    }
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 6px;
+    @if $select{
+        label{
+            display: none;
+        }
+        select{
+            background-color: #198753;
+            color: #ffff;
+            padding: 7px;
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
+
+    @if $calendar{
+
+        td{
+            font-weight: 200;
+        }
+    }
+   
+}
+
+.widget{
+    list-style: none;
+}

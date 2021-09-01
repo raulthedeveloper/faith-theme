@@ -24,7 +24,7 @@
         </div>
 
     </div>
-    <img  src="https://images.pexels.com/photos/3724031/pexels-photo-3724031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    <img  src="<?php echo get_template_directory_uri() ?>/images/faith_owner.jpg" alt="">
 </section>
 
 
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <img  src="https://images.pexels.com/photos/3724031/pexels-photo-3724031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        <img  src="<?php echo get_template_directory_uri() ?>/images/faith-lineup.jpeg" alt="">
     </section>
 
 

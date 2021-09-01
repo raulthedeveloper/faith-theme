@@ -13,7 +13,7 @@ get_header('secondary');
 
 
     <div class="container mb-3">
-        <div class="row">
+        <div class="row mb-3">
             <div class="ratio ratio-16x9">
                 <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
             </div>
@@ -21,7 +21,7 @@ get_header('secondary');
 
     </div>
 
-        <section class="bg-light mt-5">
+        <section class="bg-light p-5">
             <div class="container">
         <div class="row mt-5">
             <h2 class="text-center">Recent Xpress Videos</h2>

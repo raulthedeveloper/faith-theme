@@ -112,3 +112,30 @@ function my_sidebars(){
 };
 
 add_action( 'widgets_init', 'my_sidebars');
+
+
+
+function templateImage($image, $alt=false){
+    if($alt){
+        echo get_field($image)['alt'];
+      }
+      elseif(get_field($image)){
+        echo get_field($image)['sizes']['blog-large'];
+      }
+      else{
+        echo get_template_directory_uri() . "/images/unavailable-image.jpeg" ;
+      }
+}
+
+
+
+function templateFeaturedImage($image){
+    $unavailableImage = get_template_directory_uri() . "/images/unavailable-image.jpeg";
+
+    if($image){
+        echo $image;
+    }else{
+        echo"<img class=\"img-fluid\" src=\"{$unavailableImage}
+        \" alt=\"unavailable image\">" ;
+    }
+}
