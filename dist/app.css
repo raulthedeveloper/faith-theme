@@ -336,6 +336,21 @@
     width: 100%;
   }
 }
+.faith-btn {
+  background-color: #AA7BAB;
+  width: 13rem;
+  padding: 0.7rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+}
+.faith-btn:hover {
+  background-color: #3C2440;
+  color: white;
+}
+
 html {
   margin-top: 0;
 }
@@ -377,6 +392,10 @@ p {
   width: 13rem;
   padding: 0.7rem;
   color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
 }
 .hero-btn-box button:hover {
   background-color: #3C2440;
@@ -399,16 +418,22 @@ p {
   width: 35%;
 }
 
+.section_cta-normal {
+  background-color: #fff;
+  color: black;
+  height: 65vh;
+}
+
 .section_cta-odd {
   background-color: #3C2440;
   color: white;
-  height: 50vh;
+  height: 65vh;
 }
 
 .section_cta-even {
   background-color: #EEDFEE;
   color: black;
-  height: 50vh;
+  height: 65vh;
 }
 
 .card-img {
@@ -425,10 +450,10 @@ p {
 .blog-section {
   background-color: #3C2440;
   color: white;
-  height: 50vh;
+  height: 65vh;
   padding: 3rem;
   text-align: center;
-  min-height: 50vh;
+  min-height: 65vh;
 }
 
 footer {
@@ -444,6 +469,18 @@ footer {
 .archive-img {
   width: 100%;
   height: auto;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+
+.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+
+.video_container iframe {
+  height: 90vh;
 }
 
 @media only screen and (max-width: 450px) {

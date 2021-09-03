@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../wp-family-theme"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

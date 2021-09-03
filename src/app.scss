@@ -1,6 +1,6 @@
 @import './modules/variables.scss',
 './modules/mixins.scss','./modules/blog-page',
-'./modules/blog-cards','./modules/calendar','./modules/widgets';
+'./modules/blog-cards','./modules/calendar','./modules/widgets','./modules/utilities';
 
 
 html{
@@ -68,13 +68,16 @@ height: 50vh;
   }
 }
 
+.section_cta-normal{
+  @include section_cta($odd:false,$even:false,$normal:true)
+}
 
 .section_cta-odd{
-    @include section_cta($odd:true,$even:false)
+    @include section_cta($odd:true,$even:false,$normal:false)
 }
 
 .section_cta-even{
-    @include section_cta($odd:false,$even:true)
+    @include section_cta($odd:false,$even:true,$normal:false)
 }
 
 .card-img{
@@ -91,7 +94,7 @@ height: 50vh;
 
 
 .blog-section{
-   @include section_cta($odd:true,$even:false);
+   @include section_cta($odd:true,$even:false,$normal:false);
     padding: $section-padding;
     text-align: center;
     min-height: $section-height;
@@ -118,6 +121,20 @@ footer{
 .archive-img{
   width: 100%;
   height: auto;
+}
+
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+
+.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+
+
+.video_container iframe{
+  height: 90vh;
 }
 
 

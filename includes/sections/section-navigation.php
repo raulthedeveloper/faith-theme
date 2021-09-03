@@ -12,7 +12,26 @@
                         <a class="nav-link active" aria-current="page" href="http://faith-to-faith.local">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://faith-to-faith.local/xpress/">Xpress</a>
+
+                    <?php 
+                            $args = array(  
+                                'post_type' => 'xpress',
+                                'post_status' => 'publish',
+                                'post_per_page' => 1
+                            );
+                            $the_query = new WP_Query( $args );
+
+                            if ( $the_query->have_posts() ): ?>
+                                
+                                
+                        <?php  while ( $the_query->have_posts()): 
+                            $the_query->the_post(); ?>
+                            <a class="nav-link" href="<?php echo get_permalink(); ?>">Xpress</a>
+                                <?php  endwhile; endif;
+                                wp_reset_query()
+                                ?>
+                        
+                            
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://faith-to-faith.local/events/" >Events</a>
@@ -25,7 +44,10 @@
                         <a class="nav-link" href="http://faith-to-faith.local/blog/" >Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://faith-to-faith.local/blog/" >Store</a>
+                        <a class="nav-link" href="http://faith-to-faith.local/store/" >Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://faith-to-faith.local/about/" >About</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -35,3 +57,8 @@
         </div>
     </nav>
 </header>
+
+
+        
+
+
