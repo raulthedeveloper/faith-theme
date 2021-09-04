@@ -26,7 +26,7 @@
     <h2 class="text-center">Recent Xpress Videos</h2>
         <div class="owl-carousel">
 
-            <?php 
+            <?php  
                             $args = array(  
                                 'post_type' => 'xpress',
                                 'post_status' => 'publish',
@@ -40,9 +40,7 @@
 
             <?php  while ( $the_query->have_posts()): 
                             $the_query->the_post(); 
-                            
-                            // var_dump(count($the_query) );
-                            // echo get_field('youtube_link') . "<br>";
+                          
 
                             $video_url = explode('/',get_field('youtube_link'));
                             // var_dump($video_url);
@@ -52,15 +50,18 @@
 
             <div>
 
-                <a href="<?php echo get_permalink() ?>">
+                <a class="text-decoration-none" href="<?php echo get_permalink() ?>">
                     <div class="card bg-dark text-white">
                         <img class="img-fluid" src=<?php echo "https://img.youtube.com/vi/{$video_url[3]}/0.jpg"?>
                             alt="">
 
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
 
                         </div>
+                        <div class="card-footer">
+                        <h4 class="card-title"><?php echo the_title() ?></h4>
+                        <h6 class="card-title "><?php echo get_the_date() ?></h6>
+                    </div>
                     </div>
 
                 </a>
@@ -73,7 +74,7 @@
         </div>
 
         
-    <a href="#" class="btn btn-success">See More</a>
+    <a href="<?php echo home_url() ?>/xpress_archive/" class="btn btn-success">See More</a>
     </div>
 </section>
 
