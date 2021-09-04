@@ -21,13 +21,15 @@
                             );
                             $the_query = new WP_Query( $args );
 
-                            if ( $the_query->have_posts() ): ?>
+                            if ( $the_query->have_posts() ): 
+                                $myposts = get_posts( $args );
+                            ?>
+
+                          <a class="nav-link" href="<?php echo get_permalink($myposts[0]->ID); ?>">Xpress</a>
+
                                 
-                                
-                        <?php  while ( $the_query->have_posts()): 
-                            $the_query->the_post(); ?>
-                            <a class="nav-link" href="<?php echo get_permalink(); ?>">Xpress</a>
-                                <?php  endwhile; endif;
+                        
+                                <?php endif;
                                 wp_reset_query()
                                 ?>
                         

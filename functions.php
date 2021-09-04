@@ -9,6 +9,12 @@ function load_css()
     wp_enqueue_style('bootstrap');
 
 
+    wp_register_style('owlcarousel', get_template_directory_uri() . '/css/owl.carousel.min.css');
+    wp_enqueue_style('owlcarousel');
+
+    wp_register_style('owlcarouseltheme', get_template_directory_uri() . '/css/owl.theme.default.min.css');
+    wp_enqueue_style('owlcarouseltheme');
+
     wp_register_style( 'sass', get_template_directory_uri(  ) . '/dist/app.css', [], 1, 'all' );
     wp_enqueue_style( 'sass' );
 
@@ -22,6 +28,10 @@ function load_js()
 
     wp_register_script('bootstrap_scripts','https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min',null,null,true);
     wp_enqueue_script('bootstrap_scripts');
+
+
+    wp_register_script('owl_script',get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js',null,null,true);
+    wp_enqueue_script('owl_script');
 
 }
 

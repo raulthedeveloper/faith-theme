@@ -21,15 +21,10 @@
 
 
 
-<section class="bg-light p-5">
+<section class="bg-light pt-5">
     <div class="container">
-
-        <div class="row mt-5">
-
-
-
-            <h2 class="text-center">Recent Xpress Videos</h2>
-
+    <h2 class="text-center">Recent Xpress Videos</h2>
+        <div class="owl-carousel">
 
             <?php 
                             $args = array(  
@@ -40,6 +35,7 @@
                             $the_query = new WP_Query( $args );
 
                             if ( $the_query->have_posts() ): ?>
+
 
 
             <?php  while ( $the_query->have_posts()): 
@@ -54,40 +50,58 @@
 
                             ?>
 
-        <?php if(get_field('youtube_link') < 2): ?>
-            <div class="col-md-6 col-6-sm">
+            <div>
 
-        <?php endif; ?>
-
-        <?php if(get_field('youtube_link') > 2): ?>
-            <div class="col-md-4 col-6-sm">
-
-        <?php endif; ?>
                 <a href="<?php echo get_permalink() ?>">
-                <div class="card bg-dark text-white">
-                    <img class="img-fluid" src=<?php echo "https://img.youtube.com/vi/{$video_url[3]}/0.jpg"?> alt="">
-                   
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                     
+                    <div class="card bg-dark text-white">
+                        <img class="img-fluid" src=<?php echo "https://img.youtube.com/vi/{$video_url[3]}/0.jpg"?>
+                            alt="">
+
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
                     </div>
-                </div>
 
                 </a>
-                
             </div>
+
+
             <?php  endwhile; endif;
                                 wp_reset_query()
                                 ?>
-
-
-
-           
         </div>
-        <a href="#" class="btn btn-success">See More</a>
+
+        
+    <a href="#" class="btn btn-success">See More</a>
     </div>
 </section>
 
 
+<script>
+    jQuery(document).ready(function ($) {
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            touchDrag:true,
+            dots:true,
+            responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+        })
+
+
+
+    });
+</script>
 
 <?php get_footer(); ?>

@@ -150,6 +150,10 @@ footer{
        }
 
 
+       .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+         
+       }
+
 @media only screen and (max-width: $small) {
   .hero-btn-box{
     flex-direction: column;
