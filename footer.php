@@ -3,13 +3,13 @@
 <div class="bg-light">
     <footer>
         <ul class="nav justify-content-center border-bottom">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
         </ul>
-        <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
+        <p class="text-center text-light">&copy; 2021 Company, Inc</p>
     </footer>
 </div>
 

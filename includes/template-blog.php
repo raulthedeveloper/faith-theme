@@ -97,7 +97,7 @@ Template Name:Blog Page
 
     </div>
 
-    <div class="container">
+    <div class="row">
     <a class="btn btn-success d-block m-auto p-3" href=" <?php echo home_url() . "/" . date('Y')?>">See More</a>
 
     </div>

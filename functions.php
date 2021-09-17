@@ -26,8 +26,12 @@ function load_js()
 {
     wp_enqueue_script('jquery');
 
-    wp_register_script('bootstrap_scripts','https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min',null,null,true);
+
+    wp_register_script('bootstrap_scripts',get_template_directory_uri() . '/js/bootstrap.bundle.min.js',null,null,true);
     wp_enqueue_script('bootstrap_scripts');
+
+    wp_register_script('jquery_pagination',get_template_directory_uri() . '/dist/scripts/jQuery.paginate.min.js','jquery',null,true);
+    wp_enqueue_script("jquery_pagination");
 
 
     wp_register_script('owl_script',get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js',null,null,true);
@@ -149,3 +153,6 @@ function templateFeaturedImage($image){
         \" alt=\"unavailable image\">" ;
     }
 }
+
+
+

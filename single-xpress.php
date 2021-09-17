@@ -13,11 +13,11 @@
     <div class="row mb-3 video_container">
         <?php echo get_field('video_link') ?>
 
-
     </div>
 </div>
 
 </div>
+
 
 
 
@@ -50,7 +50,7 @@
 
             <div>
 
-                <a class="text-decoration-none" href="<?php echo get_permalink() ?>">
+                <a class="text-decoration-none" href="<?php echo get_permalink() ?>" >
                     <div class="card bg-dark text-white">
                         <img class="img-fluid" src=<?php echo "https://img.youtube.com/vi/{$video_url[3]}/0.jpg"?>
                             alt="">
@@ -58,13 +58,16 @@
                         <div class="card-img-overlay">
 
                         </div>
-                        <div class="card-footer">
-                        <h4 class="card-title"><?php echo the_title() ?></h4>
+                        <div style="z-index:30" class="card-footer " data-toggle="tooltip" data-placement="right" title="<?php echo the_title() ?>">
+                        <h4 class="card-title ellipsis"><?php echo the_title() ?></h4>
                         <h6 class="card-title "><?php echo get_the_date() ?></h6>
+                        
+                
                     </div>
                     </div>
 
                 </a>
+
             </div>
 
 
@@ -73,13 +76,17 @@
                                 ?>
         </div>
 
-        
-    <a href="<?php echo home_url() ?>/xpress_archive/" class="btn btn-success">See More</a>
+     <div class="mb-3" >
+     <a href="<?php echo home_url() ?>/xpress_archive/" class="faith-btn btn d-block m-auto">See More</a>
+     </div>   
+   
     </div>
 </section>
 
 
 <script>
+
+
     jQuery(document).ready(function ($) {
         $('.owl-carousel').owlCarousel({
             loop: false,
@@ -105,4 +112,9 @@
     });
 </script>
 
-<?php get_footer(); ?>
+<?php get_footer();
+
+
+
+?>
+
