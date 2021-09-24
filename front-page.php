@@ -20,7 +20,7 @@
             <div class="row">
                 <h2>About Us</h2>
                 <p>Pastors Juan & Stacey Harris began their matrimonial journey together after a 2 ½ year courtship on May 26, 2001. After returning from the south to settle in East Stroudsburg, PA in 2011, they reconnected with Pastor Michael D McDuffie, founder of Mighty Sons of God Fellowship Church and began intensive ministry training under his leadership. After completing training they were licensed as Ministers on January 22, 2012. </p>
-                <a href="<?php echo home_url() . "/about-us/" ?>" class="faith-btn btn"\>Read More</a>
+                <a href="<?php echo home_url() . "/about-us/" ?>" class="faith-btn-dark btn"\>Read More</a>
             </div>
 
         </div>
@@ -36,7 +36,7 @@
                 <div class="text-box  ">
                     <h2>About Ministry</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at dolores, laboriosam, laborum maiores maxime molestias mollitia necessitatibus nesciunt nihil nulla numquam omnis optio, provident quas quia quisquam veritatis!</p>
-                    <div class="faith-btn">Read More</div>
+                    <div class="faith-btn-dark">Read More</div>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
 <section class="section_cta-normal" style="height:initial;">
     <div class="container-fluid p-5">
         <div class="row">
-            <h2 class="text-center">Latest Xpress Videos</h2>
+            <h2 class="text-center">Latest Word Xpress Videos</h2>
 
             <?php  
                             $args = array(  
@@ -101,7 +101,7 @@
 
 
         <div class="row pt-3">
-        <a href="<?php echo home_url() ?>/xpress_archive/" class="faith-btn btn d-block m-auto">See More</a>
+        <a href="<?php echo home_url() ?>/xpress_archive/" class="faith-btn-dark btn d-block m-auto">See More</a>
         </div>
         
     </div>
@@ -114,7 +114,7 @@
             <div class="col">
                 <h2>Blog</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab asperiores eligendi eos est et eum facilis hic illum iste iusto molestiae mollitia necessitatibus nemo quia sapiente, soluta sunt ullam?</p>
-                <a href="#" class="faith-btn">Read More</a>
+                <a href="#" class="faith-btn-dark">Read More</a>
             </div>
         </div>
     </div>

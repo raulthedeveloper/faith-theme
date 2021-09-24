@@ -46,7 +46,7 @@
             <div class="col-md-7">
                 <?php if(has_post_thumbnail()): ?>
 
-                <img class="img-fluid w-100" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                <img class="img-fluid w-100 h-100" src="<?php the_post_thumbnail_url(); ?>" alt="">
 
 
                 <?php endif?>

@@ -6,12 +6,24 @@
 
     list-style: none;
 
+    tbody{
+        color: white;
+    }
+
     h4{
         font-size: 30px;
     }
 
+    caption{
+        color: white;
+    }
+    
+
     td{
         font-size: initial;
+        color: $secondary-color;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
    
     @include widget-header($calendar:true);
@@ -22,9 +34,19 @@
     }
 }
 
+.wp-block-calendar table caption, .wp-block-calendar table tbody{
+    color: white;
+}
+
 #wp-calendar {
     width: 100%;
     background-color: $primary-color;
     color: white;
     
+  }
+
+
+  .wp-block-calendar table th{
+      background-color: purple;
+
   }

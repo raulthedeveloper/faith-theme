@@ -13,8 +13,24 @@ html{
     margin: 0;
 }
 
+
+
 p{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  
+}
+
+
+
+
+
+.comment-form-comment{
+  display: flex;
+  flex-direction: column;
+}
+
+.submit{
+  @include faith-button($light:true,$dark:false);
 }
 
 
@@ -64,7 +80,7 @@ p{
 
 
   button{
-    @include faith_button;
+    @include faith_button($light:true,$dark:false);
   }
 }
 
@@ -73,7 +89,7 @@ p{
 background-position: center;
 background-repeat: no-repeat;
 background-size:cover;
-height: 50vh;
+min-height: 50vh;
 }
 
 
@@ -118,6 +134,7 @@ height: 50vh;
     padding: $section-padding;
     text-align: center;
     min-height: $section-height;
+    background-image: url('../images/blog-section-background.jpg');
 }
 
 
@@ -144,7 +161,7 @@ footer{
 
 .archive-img{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
@@ -257,6 +274,9 @@ footer{
 
   }
 }
+
+
+
 
 
 @media only screen and (max-width: $medium) {

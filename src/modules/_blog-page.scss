@@ -7,6 +7,29 @@
 }
 
 
+.tribe-compatibility-container{
+    background: #513a55;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: wheat;
+    border-radius: 10px;
+
+    h2{
+        color: white;
+    font-size: 1.4rem;
+    }
+
+    div{
+        color: white;
+    }
+}
+
+.wp-block-social-links{
+    @include widget-header($select:true);
+    justify-content: space-around;
+}
+
+
 .widget_categories{
     list-style: none;
     text-align: center;
@@ -16,6 +39,10 @@
     @include widget-header($select:true);
 }
 
+
+.seemore-btn{
+    max-width: 200px;
+}
 
 
 .latest-post img{
@@ -28,7 +55,7 @@
     z-index: 3;
     float: left;
     position: relative;
-    bottom: 20rem;
+    bottom: 29rem;
     padding: 1rem;
 
     h2{
@@ -55,6 +82,10 @@
 
 @media only screen and (max-width:$medium) {
 
+    .seemore-btn{
+        max-width: initial;
+    }
+
 .date-box{
     background-color: $accent-color;
     width: 50px;
@@ -66,3 +97,6 @@
     text-align: center;
 }
 }
+
+
+

@@ -9,6 +9,47 @@
   padding-bottom: 4rem;
 }
 
+.tribe-compatibility-container {
+  background: #513a55;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: wheat;
+  border-radius: 10px;
+}
+.tribe-compatibility-container h2 {
+  color: white;
+  font-size: 1.4rem;
+}
+.tribe-compatibility-container div {
+  color: white;
+}
+
+.wp-block-social-links {
+  background: #9559a0;
+  color: #ffff;
+  letter-spacing: 4px;
+  list-style: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 6px;
+  justify-content: space-around;
+}
+.wp-block-social-links h4 {
+  border-bottom: solid 1px;
+  padding-bottom: 0.5rem;
+  font-size: 2vw;
+}
+.wp-block-social-links label {
+  display: none;
+}
+.wp-block-social-links select {
+  background-color: purple;
+  color: #ffff;
+  padding: 7px;
+  border-radius: 5px;
+  width: 100%;
+}
+
 .widget_categories {
   list-style: none;
   text-align: center;
@@ -31,11 +72,15 @@
   display: none;
 }
 .widget_categories select {
-  background-color: #198753;
+  background-color: purple;
   color: #ffff;
   padding: 7px;
   border-radius: 5px;
   width: 100%;
+}
+
+.seemore-btn {
+  max-width: 200px;
 }
 
 .latest-post img {
@@ -48,7 +93,7 @@
   z-index: 3;
   float: left;
   position: relative;
-  bottom: 20rem;
+  bottom: 29rem;
   padding: 1rem;
 }
 .latest-post-text-box h2 {
@@ -70,6 +115,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .seemore-btn {
+    max-width: initial;
+  }
+
   .date-box {
     background-color: purple;
     width: 50px;
@@ -84,7 +133,8 @@
 .readmore {
   margin: 1rem;
   box-shadow: 0px 1px 15px 0px;
-  max-height: 450px;
+  display: flex;
+  flex-direction: column;
 }
 .readmore-footer {
   padding-bottom: 1rem;
@@ -102,7 +152,7 @@
 }
 
 .card-excerpt {
-  height: 208px;
+  height: 160px;
 }
 
 .readmore:hover {
@@ -123,11 +173,9 @@
   flex-direction: column;
   float: left;
   position: absolute;
-  left: 16px;
-  top: 178px;
   z-index: 1000;
   background-color: #9559a0;
-  color: #5a5a5a;
+  color: #EEDFEE;
   font-weight: bold;
   font-size: 1.5rem;
   padding: 1rem;
@@ -191,6 +239,17 @@
   background: linear-gradient(90deg, rgba(35, 35, 35, 0.21) 0%, rgba(0, 0, 0, 0.22) 47%, rgba(0, 0, 0, 0.25) 73%);
 }
 
+.readmore a {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .readmore a {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 450px) {
   .employee-image {
     border: none;
@@ -217,11 +276,20 @@
   padding-bottom: 2rem;
   border-radius: 6px;
 }
+.wp-block-calendar tbody {
+  color: white;
+}
 .wp-block-calendar h4 {
   font-size: 30px;
 }
+.wp-block-calendar caption {
+  color: white;
+}
 .wp-block-calendar td {
   font-size: initial;
+  color: #EEDFEE;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .wp-block-calendar h4 {
   border-bottom: solid 1px;
@@ -235,10 +303,18 @@
   text-align: center;
 }
 
+.wp-block-calendar table caption, .wp-block-calendar table tbody {
+  color: white;
+}
+
 #wp-calendar {
   width: 100%;
   background-color: #9559a0;
   color: white;
+}
+
+.wp-block-calendar table th {
+  background-color: purple;
 }
 
 .widget_archive {
@@ -263,7 +339,7 @@
   display: none;
 }
 .widget_archive select {
-  background-color: #198753;
+  background-color: purple;
   color: #ffff;
   padding: 7px;
   border-radius: 5px;
@@ -292,7 +368,7 @@
   display: none;
 }
 .donate-widget select {
-  background-color: #198753;
+  background-color: purple;
   color: #ffff;
   padding: 7px;
   border-radius: 5px;
@@ -333,15 +409,14 @@
     display: none;
   }
   .donate-widget select {
-    background-color: #198753;
+    background-color: purple;
     color: #ffff;
     padding: 7px;
     border-radius: 5px;
     width: 100%;
   }
 }
-.faith-btn {
-  background-color: #AA7BAB;
+.faith-btn-light {
   width: 13rem;
   padding: 0.7rem;
   color: white;
@@ -349,8 +424,24 @@
   border-radius: 5px;
   text-decoration: none;
   border: none;
+  background-color: #AA7BAB;
 }
-.faith-btn:hover {
+.faith-btn-light:hover {
+  background-color: #9559a0;
+  color: white;
+}
+
+.faith-btn-dark {
+  width: 13rem;
+  padding: 0.7rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  background-color: purple;
+}
+.faith-btn-dark:hover {
   background-color: #9559a0;
   color: white;
 }
@@ -365,7 +456,27 @@ html {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  width: 13rem;
+  padding: 0.7rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  background-color: #AA7BAB;
+}
+.submit:hover {
+  background-color: #9559a0;
+  color: white;
 }
 
 .wp-block-image:not(.is-style-rounded) img {
@@ -405,7 +516,6 @@ p {
   align-items: center;
 }
 .hero-btn-box button {
-  background-color: #AA7BAB;
   width: 13rem;
   padding: 0.7rem;
   color: white;
@@ -413,6 +523,7 @@ p {
   border-radius: 5px;
   text-decoration: none;
   border: none;
+  background-color: #AA7BAB;
 }
 .hero-btn-box button:hover {
   background-color: #9559a0;
@@ -424,7 +535,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .text-box {
@@ -438,19 +549,19 @@ p {
 .section_cta-normal {
   background-color: #fff;
   color: black;
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .section_cta-odd {
   background-color: #9559a0;
   color: white;
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .section_cta-even {
   background-color: #EEDFEE;
   color: black;
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .card-img {
@@ -467,10 +578,11 @@ p {
 .blog-section {
   background-color: #9559a0;
   color: white;
-  height: 65vh;
+  min-height: 65vh;
   padding: 3rem;
   text-align: center;
   min-height: 65vh;
+  background-image: url(/images/blog-section-background.jpg?71efe4bf373429f206ebda84aaa87fa0);
 }
 
 footer {
@@ -488,7 +600,7 @@ footer li {
 
 .archive-img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {

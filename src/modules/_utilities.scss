@@ -1,5 +1,10 @@
 
 
-.faith-btn{
-    @include faith_button;
+.faith-btn-light{
+    @include faith_button($light:true,$dark:false);
+}
+
+.faith-btn-dark{
+    @include faith_button($light:false,$dark:true);
+
 }
