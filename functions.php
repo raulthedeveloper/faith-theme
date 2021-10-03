@@ -15,7 +15,7 @@ function load_css()
     wp_register_style('owlcarouseltheme', get_template_directory_uri() . '/css/owl.theme.default.min.css');
     wp_enqueue_style('owlcarouseltheme');
 
-    wp_register_style('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css',array(),false,'all');
+    wp_register_style('aos', get_template_directory_uri() . '/css/aos.css',array(),false,'all');
     wp_enqueue_style('aos');
 
 
@@ -38,7 +38,7 @@ function load_js()
     wp_register_script('jquery_pagination',get_template_directory_uri() . '/dist/scripts/jQuery.paginate.min.js','jquery',null,true);
     wp_enqueue_script("jquery_pagination");
 
-    wp_register_script('aos_script', 'https://unpkg.com/aos@2.3.1/dist/aos.js',null,null,true);
+    wp_register_script('aos_script', get_template_directory_uri() . '/js/aos.js',null,null,true);
     wp_enqueue_script("aos_script");
 
 

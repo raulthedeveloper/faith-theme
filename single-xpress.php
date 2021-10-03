@@ -77,7 +77,7 @@
         </div>
 
      <div class="mb-3" >
-     <a href="<?php echo home_url() ?>/xpress_archive/" class="faith-btn btn d-block m-auto">See More</a>
+     <a href="<?php echo home_url() ?>/xpress_archive/" class="faith-btn-dark btn d-block m-auto">See More</a>
      </div>   
    
     </div>

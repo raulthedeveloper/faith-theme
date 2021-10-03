@@ -92,6 +92,19 @@
             font-weight: 200;
         }
     }
+    // @media (max-width: $medium) { 
+    //     p{
+    //         font-size: 1.3rem;
+    //     }
+    // }
+
+    // @media (max-width: $small) { 
+    //     p{
+    //         font-size: 1rem;
+    //     }
+
+    //  }
+
    
 }
 
@@ -111,3 +124,5 @@
         color: lighten('black',20%);
     }
 }
+
+

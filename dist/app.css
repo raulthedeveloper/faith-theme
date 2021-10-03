@@ -231,6 +231,13 @@
   font-size: 1.7rem;
 }
 
+.readmore-footer {
+  overflow: hidden;
+}
+.readmore-footer p {
+  font-size: 1.3rem;
+}
+
 .card-archive:hover {
   box-shadow: 0px 1px 15px 0px;
 }
@@ -456,6 +463,10 @@ html {
 }
 
 p {
+  font-size: 1.2rem;
+}
+
+h5 {
   font-size: 1.5rem;
 }
 
@@ -531,11 +542,12 @@ p {
 }
 
 .main-hero {
-  /* background: url('./images/ministry_front.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
+  padding-bottom: 3rem;
+  padding: 1rem;
 }
 
 .text-box {
@@ -549,19 +561,19 @@ p {
 .section_cta-normal {
   background-color: #fff;
   color: black;
-  min-height: 65vh;
+  min-height: 40vh;
 }
 
 .section_cta-odd {
   background-color: #9559a0;
   color: white;
-  min-height: 65vh;
+  min-height: 40vh;
 }
 
 .section_cta-even {
   background-color: #EEDFEE;
   color: black;
-  min-height: 65vh;
+  min-height: 40vh;
 }
 
 .card-img {
@@ -578,10 +590,10 @@ p {
 .blog-section {
   background-color: #9559a0;
   color: white;
-  min-height: 65vh;
+  min-height: 40vh;
   padding: 3rem;
   text-align: center;
-  min-height: 65vh;
+  min-height: 40vh;
   background-image: url(/images/blog-section-background.jpg?71efe4bf373429f206ebda84aaa87fa0);
 }
 
@@ -641,6 +653,10 @@ footer li {
 }
 
 @media only screen and (max-width: 450px) {
+  p {
+    font-size: 1rem;
+  }
+
   .hero-btn-box {
     flex-direction: column;
     justify-content: center;
@@ -654,9 +670,28 @@ footer li {
     height: 60vh;
   }
 }
+.xpress-home-row {
+  padding: 4rem;
+}
+
 @media only screen and (max-width: 600px) {
-  p {
-    font-size: initial;
+  .xpress-home-row {
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
+  .blog-section {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .main-hero {
+    text-align: center;
+  }
+
+  .faith-btn-dark, .faith-btn-light, .btn {
+    margin-bottom: 1rem;
+    width: 100%;
   }
 
   .text-box {
@@ -671,6 +706,8 @@ footer li {
     flex-direction: column-reverse;
     height: inherit;
     width: 100%;
+    justify-content: flex-end;
+    flex-flow: wrap-reverse;
   }
   .section_cta-odd img {
     width: 100%;
@@ -680,6 +717,8 @@ footer li {
     flex-direction: column-reverse;
     height: inherit;
     width: 100%;
+    justify-content: flex-end;
+    flex-flow: wrap-reverse;
   }
   .section_cta-even img {
     width: 100%;
@@ -690,8 +729,46 @@ footer li {
   }
 }
 @media only screen and (max-width: 767px) {
+  p {
+    font-size: 1.1rem;
+  }
+
+  #contact .row {
+    flex-direction: column-reverse;
+  }
+
+  .btn-box {
+    text-align: center;
+  }
+
+  .main-hero {
+    padding-bottom: 4rem;
+  }
+  .main-hero h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
   .video_container iframe {
     height: 70vh;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav-link {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h5 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2.1rem;
+    font-weight: 300;
   }
 }

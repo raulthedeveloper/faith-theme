@@ -3,7 +3,7 @@
 
         <div class="container">
             <a class="navbar-brand" href="<?php echo home_url() ?>">
-            <img width="50" height="50" src="<?php echo get_template_directory_uri() . '/images/faith_logo_icon.png' ?>" alt="">
+            <img width="50" height="50" src="<?php echo get_template_directory_uri() . '/images/faith_logo_small.png' ?>" alt="">
         </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-warning">Donate</button>
+                    <!-- <button class="btn btn-warning" >Donate</button> -->
                 </div>
             </div>
         </div>

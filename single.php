@@ -28,7 +28,7 @@
                     <?php 
                                 foreach($categories as $cat):?>
                                     
-                                    <a class="btn btn-dark mb-1" href="<?php echo get_category_link($cat) ?>"><?php echo get_cat_name($cat->cat_ID ) ?></a>
+                                    <a class="btn btn-dark mb-1" style="max-width: 35%;" href="<?php echo get_category_link($cat) ?>"><?php echo get_cat_name($cat->cat_ID ) ?></a>
                                     
 
                            <?php endforeach ?>
@@ -107,3 +107,5 @@
 
 
 <?php get_footer(); ?>
+
+

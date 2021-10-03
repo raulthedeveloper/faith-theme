@@ -5,18 +5,36 @@ get_template_part('includes/sections/section','head');
 ?>
 
 
+<section class="main-hero" style="background:linear-gradient(90deg, rgba(35,35,35,0.61) 0%, rgba(0,0,0,0.32) 47%, rgba(0,0,0,0.35) 73%),url('<?php echo get_template_directory_uri(); ?>/images/hero_background.png'); background-repeat:no-repeat; background-size:cover" ?>')" >
+    <div class="row">
+        <div class="col-md-6">
+        <img class="img-fluid d-flex m-auto" src="<?php echo get_template_directory_uri() . "/images/faith_logo.png" ?>" alt="">
+
+        </div>
+        <div class="col-md-6 justify-content-center d-flex m-auto flex-column">
+                <h1 class="text-light">The Just Shall Live By Faith Romans 1:17</h1>
+                <div class="btn-box">
+                <a class="btn faith-btn-dark" target="_blank" href="https://www.google.com/maps/place/Faith+to+Faith+Ministries,+2035+Milford+Rd,+East+Stroudsburg,+PA+18301/@41.0269371,-75.1679489,17z/data=!4m2!3m1!1s0x89c4891f2307f839:0x8181925c53de052a">Get Directions</a>
+
+                <a class="btn faith-btn-light" href="<?php echo get_permalink($myposts[0]->ID); ?>">Watch The Word Xpress</a>
+
+
+                </div>
+    </div>
+</section>
 
 
 
+<!-- Carousel for Future implementation -->
 
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="card-img-overlay" style="background:#2f0d35e6;">
         <div class="container">
             <div class="row">
 
             <div class="col-md-6">
-                <img class="img-fluid" src="<?php echo get_template_directory_uri() . "/images/faith_logo_nobackground.png" ?>" alt="">
+                <img class="img-fluid" src="<?php echo get_template_directory_uri() . "/images/faith_logo.png" ?>" alt="">
             </div>
 
             <div class="col-md-6 justify-content-center d-flex m-auto flex-column">
@@ -32,7 +50,7 @@ get_template_part('includes/sections/section','head');
             </div>
 
 
-                <!-- <div class="hero-btn-box "> -->
+               <div class="hero-btn-box "> -->
 
                 <?php 
                             $args = array(  
@@ -58,7 +76,7 @@ get_template_part('includes/sections/section','head');
                 <!-- </div> -->
 
 
-            </div>
+            <!-- </div> -->
 
 
             <!-- <div class="row">
@@ -72,20 +90,20 @@ get_template_part('includes/sections/section','head');
                     <span class="visually-hidden">Next</span>
                 </button>
             </div> -->
-        </div>
+        <!-- </div>
 
 
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="<?php echo get_template_directory_uri(); ?>/images/hero_background.png')" class="d-block w-100" alt="...">
-        </div>
+        </div> -->
         <!-- <div class="carousel-item">
         <img src="<?php echo get_template_directory_uri(); ?>/images/hero_secondary.jpg')" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
         <img src="<?php echo get_template_directory_uri(); ?>/images/hero_secondary.jpg')" class="d-block w-100" alt="...">
         </div> -->
-    </div>
+    <!-- </div> -->
 
-</div>
+<!-- </div> --> 

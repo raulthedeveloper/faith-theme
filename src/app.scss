@@ -16,11 +16,13 @@ html{
 
 
 p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   
 }
 
-
+h5{
+  font-size: 1.5rem;
+}
 
 
 
@@ -85,11 +87,12 @@ p{
 }
 
 .main-hero{
-    /* background: url('./images/ministry_front.jpg'); */
 background-position: center;
 background-repeat: no-repeat;
 background-size:cover;
 min-height: 50vh;
+padding-bottom: 3rem;
+padding:1rem;
 }
 
 
@@ -113,7 +116,8 @@ min-height: 50vh;
 }
 
 .section_cta-even{
-    @include section_cta($odd:false,$even:true,$normal:false)
+    @include section_cta($odd:false,$even:true,$normal:false);
+   
 }
 
 .card-img{
@@ -227,6 +231,11 @@ footer{
 
 
 @media only screen and (max-width: $small) {
+  
+  p{
+    font-size: 1rem;
+}
+
   .hero-btn-box{
     flex-direction: column;
     justify-content: center;
@@ -243,13 +252,40 @@ footer{
 
 }
 
+
+
+
+.xpress-home-row{
+  padding: 4rem;
+}
+
 @media only screen and (max-width: 600px) {
 
   
+  .xpress-home-row{
+    padding: 1rem;
+    padding-top: 2rem;
 
-  p{
-    font-size: initial;
   }
+
+
+  .blog-section{
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+.main-hero{
+  text-align: center;
+  
+}
+
+  .faith-btn-dark, .faith-btn-light, .btn{
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+
+ 
   .text-box{
     padding: 1rem
   }
@@ -260,10 +296,14 @@ footer{
 
   .section_cta-odd{
    @include section_cta_mobile;
+   justify-content: flex-end;
+   flex-flow: wrap-reverse;
   }
 
   .section_cta-even{
     @include section_cta_mobile;
+    justify-content: flex-end;
+    flex-flow: wrap-reverse;
 
   }
 
@@ -280,9 +320,51 @@ footer{
 
 
 @media only screen and (max-width: $medium) {
+  
+
+  p{
+    font-size: 1.1rem;
+  }
+
+  #contact .row{
+    flex-direction: column-reverse;
+  }
+
+  .btn-box{
+    text-align: center;
+  }
+  .main-hero{
+    padding-bottom: 4rem;
+
+    h1{
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+  }
   .video_container iframe{
     height: 70vh;
     width: 100%;
   }
 
+}
+
+
+
+@media only screen and (min-width: $large) {
+  .nav-link{
+    font-size: 1.4rem;
+  }
+  h2{
+    font-size: 2.8rem;
+  }
+
+  h5{
+    font-size: 2.5rem;
+  }
+
+p{
+  font-size: 2.1rem;
+  font-weight: 300;
+}
 }
