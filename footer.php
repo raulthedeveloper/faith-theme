@@ -3,11 +3,53 @@
 <div class="bg-light">
     <footer>
         <ul class="nav justify-content-center border-bottom">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+        <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="<?php echo home_url() ?>">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    
+
+                    <?php 
+                            $args = array(  
+                                'post_type' => 'xpress',
+                                'post_status' => 'publish',
+                                'post_per_page' => 1
+                            );
+                            $the_query = new WP_Query( $args );
+
+                            if ( $the_query->have_posts() ): 
+                                $myposts = get_posts( $args );
+                            ?>
+
+                          <a class="nav-link text-light" href="<?php echo get_permalink($myposts[0]->ID); ?>">Word Xpress</a>
+
+                                
+                        
+                                <?php endif;
+                                wp_reset_query()
+                                ?>
+                        
+                            
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo home_url() ?>/events/" >Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo home_url() ?>/gallery/" >Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo home_url() ?>/blog/" >Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo home_url() ?>/store/" >Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo home_url() ?>/about/" >About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="<?php echo home_url() ?>/contact/" >Contact</a>
+                    </li>
         </ul>
         <p class="text-center text-light">&copy; 2021 Company, Inc</p>
     </footer>
@@ -19,7 +61,9 @@
 <?php wp_footer(  )?>
 
 <script>
-  AOS.init();
+  AOS.init({
+      once:true
+  });
 </script>
 
 </body>

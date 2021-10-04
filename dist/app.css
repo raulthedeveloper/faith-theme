@@ -114,6 +114,14 @@
   padding-right: 0;
 }
 
+.blog-top-section {
+  background: #800e802e;
+  padding: 1.5rem;
+  border-radius: 4px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 @media only screen and (max-width: 767px) {
   .seemore-btn {
     max-width: initial;
@@ -274,6 +282,7 @@
   font-size: 1.3rem;
   padding: 10px;
   text-align: center;
+  overflow: scroll;
   list-style: none;
   background: #9559a0;
   color: #ffff;
@@ -385,8 +394,20 @@
   width: 60%;
 }
 
+.widget-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #800e8052;
+  padding: 1rem;
+}
+
 @media only screen and (max-width: 767px) {
   .widget {
+    display: none;
+  }
+
+  .widget-box {
     display: none;
   }
 
@@ -495,7 +516,6 @@ h5 {
 }
 
 .secondary-header {
-  margin-bottom: 5rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

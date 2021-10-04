@@ -21,10 +21,20 @@
     }
    
 }
-
+.widget-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #800e8052;
+     padding: 1rem;
+}
 
 @media only screen and (max-width:$medium) {
     .widget{
+        display: none;
+    }
+
+    .widget-box{
         display: none;
     }
 

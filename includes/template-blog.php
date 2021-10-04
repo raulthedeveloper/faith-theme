@@ -9,8 +9,8 @@ Template Name:Blog Page
 
 <?php get_header('secondary') ?>
 
-<div class="container mb-5">
-    <div class="row" data-aos="fade-in">
+<div class="container-fluid blog-top-section mb-5 ">
+    <div class="row " data-aos="fade-in">
         <div class="col-md-8 col-sm-12 latest-post">
             <?php
         $recent_posts = wp_get_recent_posts(array(
@@ -45,7 +45,7 @@ Template Name:Blog Page
         </div>
 
             <!-- Column holds sidebars from wp widgets -->
-        <div class="col-md-4 col-sm-12 flex-column d-flex">
+        <div class="col-md-4 col-sm-12 widget-box ">
             
 
             
@@ -75,7 +75,6 @@ Template Name:Blog Page
 
 
 
-    <hr id="card-line">
 
     <div class="row mt-5">
         <h2 class="text-center">Most Recent Posts</h2>
@@ -169,13 +168,13 @@ Template Name:Blog Page
 
                         if (e.featured_media_src_url) {
                             $('#post_container').append(
-                                `<div data-aos="fade-in" data-aos-duration="1500" class="col-md-4 col-sm-12 pagination__item"> <div class="readmore"><div class="readmore-cap">${yellowBox}</div><img src="${e.featured_media_src_url}" alt=""></div><div class="readmore-footer bg-dark text-light p-3"><h5 data-aos="fade-in" class="slider-caption-class" data-aos-duration="500">${e.title.rendered}</h5><div data-aos="fade-in" data-aos-duration="500" class="card-excerpt">${e.excerpt.rendered}</div></div><div class="bg-dark p-3 text-center"><a data-aos="fade-in" data-aos-duration="500" class="btn faith-btn-dark" href="${e.link}">Read More</a></div></div></div>`
+                                `<div data-aos="fade-in" data-aos-duration="1500" class="col-md-4 col-sm-12 pagination__item"> <div class="readmore"><div class="readmore-cap">${yellowBox}</div><img src="${e.featured_media_src_url}" alt=""></div><div class="readmore-footer bg-dark text-light p-3"><h5 data-toggle="tooltip" data-placement="right" title="${e.title.rendered}" data-aos="fade-in" class="slider-caption-class ellipsis" data-aos-duration="500">${e.title.rendered}</h5><div data-aos="fade-in" data-aos-duration="500" class="card-excerpt">${e.excerpt.rendered}</div></div><div class="bg-dark p-3 text-center"><a data-aos="fade-in" data-aos-duration="500" class="btn faith-btn-dark" href="${e.link}">Read More</a></div></div></div>`
                             )
                         } else {
                             $('#post_container').append(
                                 `<div data-aos="fade-in" data-aos-duration="1500"  class="col-md-4 col-sm-12 pagination__item"> <div class="readmore"><div class="readmore-cap">${yellowBox}</div>
                                 <div class="card-date">12</div><img src="<?php echo get_template_directory_uri() . "/images/unavailable-image.jpeg" ;?>"
- alt=""></div><div class="readmore-footer bg-dark text-light p-3"><h5 data-aos="fade-in" data-aos-duration="500" class="slider-caption-class">${e.title.rendered}</h5><div class="card-excerpt" data-aos="fade-in" data-aos-duration="500">${e.excerpt.rendered}</div></div><div class="bg-dark p-3 text-center"><a data-aos="fade-in" data-aos-duration="500" class="btn faith-btn-dark" href="${e.link}">Read More</a></div></div></div>`
+ alt=""></div><div class="readmore-footer bg-dark text-light p-3"><h5 data-toggle="tooltip" data-placement="right" title="${e.title.rendered}" data-aos="fade-in" data-aos-duration="500" class="slider-caption-class ellipsis">${e.title.rendered}</h5><div class="card-excerpt" data-aos="fade-in" data-aos-duration="500">${e.excerpt.rendered}</div></div><div class="bg-dark p-3 text-center"><a data-aos="fade-in" data-aos-duration="500" class="btn faith-btn-dark" href="${e.link}">Read More</a></div></div></div>`
                             )
                         }
 

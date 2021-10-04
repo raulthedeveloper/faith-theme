@@ -16,7 +16,27 @@ get_template_part('includes/sections/section','head');
                 <div class="btn-box">
                 <a class="btn faith-btn-dark" target="_blank" href="https://www.google.com/maps/place/Faith+to+Faith+Ministries,+2035+Milford+Rd,+East+Stroudsburg,+PA+18301/@41.0269371,-75.1679489,17z/data=!4m2!3m1!1s0x89c4891f2307f839:0x8181925c53de052a">Get Directions</a>
 
-                <a class="btn faith-btn-light" href="<?php echo get_permalink($myposts[0]->ID); ?>">Watch The Word Xpress</a>
+                <?php 
+                            $args = array(  
+                                'post_type' => 'xpress',
+                                'post_status' => 'publish',
+                                'post_per_page' => 1
+                            );
+                            $the_query = new WP_Query( $args );
+
+                            if ( $the_query->have_posts() ): 
+                                $myposts = get_posts( $args );
+                            ?>
+
+                          <a class="btn faith-btn-light" href="<?php echo get_permalink($myposts[0]->ID); ?>">Watch The Word Xpress</a>
+
+                                
+                        
+                                <?php endif;
+                                wp_reset_query()
+                                ?>
+
+
 
 
                 </div>

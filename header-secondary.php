@@ -39,11 +39,9 @@ function headerTitle($args,$currentUrl){
 
 
 
-<div class="p-5  d-flex justify-content-center secondary-header <?php echo $contact_page == 'contact.php' ? 'mb-0' : null ?>" style="height:35vh;background:linear-gradient(90deg, rgba(35,35,35,0.61) 0%, rgba(0,0,0,0.32) 47%, rgba(0,0,0,0.35) 73%),url('<?php echo get_template_directory_uri(); ?>/images/hero_background.png'); background-repeat:no-repeat; background-size:cover">
+<div class="p-5  d-flex justify-content-center secondary-header <?php echo $contact_page == 'contact.php' ? 'mb-0' : null ?>" style="<?php echo $currentUrl[3] !== 'blog' ? 'margin-bottom: 5rem;' : null?>
+height:35vh;background:linear-gradient(90deg, rgba(35,35,35,0.61) 0%, rgba(0,0,0,0.32) 47%, rgba(0,0,0,0.35) 73%),url('<?php echo get_template_directory_uri(); ?>/images/hero_background.png'); background-repeat:no-repeat; background-size:cover">
         <h1 class="display-1 m-auto text-light text-center font-weight-bold"><?php echo  headerTitle($args,$currentUrl);?></h1>
     </div>
 </div>
 
-<!--inear-gradient(-->
-<!--90deg-->
-<!--, rgb(35 35 35 / 61%) 0%, rgb(0 0 0 / 32%) 47%, rgb(0 0 0 / 35%) 73%)-->
