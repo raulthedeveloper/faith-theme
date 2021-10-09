@@ -26,6 +26,9 @@ h5{
 
 
 
+
+
+
 .comment-form-comment{
   display: flex;
   flex-direction: column;
@@ -365,4 +368,68 @@ p{
   font-size: 2.1rem;
   font-weight: 300;
 }
+}
+
+@mixin formStyle {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  // margin-bottom: 1rem;
+
+}
+
+
+.faith-contact-form{
+  .wpforms-submit-container{
+    margin: 10px;
+  }
+
+
+ #wpforms-146-field_0-container{
+  
+   label{
+     margin-left:10px;
+   }
+
+   input{
+     margin-bottom: 1rem;
+   }
+ }
+
+
+  .wpforms-field-sublabel{
+    display: none;
+  }
+  .wpforms-field-row{
+    label{
+      margin-left: 10px;
+    }
+    display: flex;
+    input{
+      @include formStyle();
+    }
+  }
+
+  .wpforms-field-email{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 1rem;
+    @include formStyle();
+
+  }
+
+ #wpforms-146-field_2-container{
+   margin-bottom: 1rem;
+   margin-left: 10px;
+    margin-right: 10px;
+ }
+
+  .wpforms-field-medium{
+
+    display: flex;
+    flex-direction: column;
+    @include formStyle();
+
+  }
 }

@@ -1,39 +1,9 @@
-<section id="contact" class="d-flex section_cta-even" style="height:initial">
+<section  class="d-flex section_cta-even" style="height:initial">
     <div class="container-fluid">
 <div class="row">
 
 
-        <div class="col-md-6 col-sm-12 p-2">
         
-        
-            <h2 class="text-center">Contact Us</h2>
-            <form>
-                <div class="mb-3 row">
-                    <div class="col-md-6 col-sm-12">
-                        <label for="exampleInputEmail1" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea3">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
-                </div>
-
-                <button type="submit" class="faith-btn-dark mt-3 mb-3">Submit</button>
-            </form>
-      
-        </div>
 
 
         <div class="col-md-6 col-sm-12 p-0">
@@ -43,12 +13,72 @@
 
         </div>
 
+        <div class="col-md-6 col-sm-12 p-2">
+        
+
+
+            <h2 class="text-center">Contact Us</h2>
+            
+            <?php echo do_shortcode('[wpforms id="146" title="false"]'); ?>
+
+      
+        </div>
+
         </div>
     </div>
 
+
+
     
 
-        
+    <script>
+    (function ($) {
+        $('#contact').submit(function (event) {
+            event.preventDefault()
+            alert('hello')
+           
+           var endpoint = '<?php echo admin_url('admin-ajax.php') ?>';
+
+
+           var form = $('#contact').serialize();
+           console.log(form)
+
+           var formData = new FormData();
+
+           formData.append('action','contact');
+
+           /////////// Replace nonce info for you website to prevent security issues ///////////////
+           formData.append('nonce','<?php echo wp_create_nonce('ajax-nonce') ?>');
+
+
+           formData.append('contact',form);
+
+           $.ajax(endpoint, {
+
+               type:'POST',
+               data:formData,
+               processData:false,
+               contentType:false,
+
+               success: function(res){
+                   $('#success_message').text('Your message has been sent. Thank you!').show();
+                   $('#success_message').fadeIn(2000).delay(3000).slideUp(1000)
+                   $('#contact').trigger('reset');
+
+                   alert(res.data)
+               },
+
+               error: function(err){
+                $('#fail_message').text('Sorry message was not sent. Please contact through phone or email').show();
+                   $('#fail_message').fadeIn(2000).delay(3000).slideUp(1000)
+                   $('#contact').trigger('reset');
+               }
+
+
+           })
+        })
+    })(jQuery)
+</script>
 
 
 

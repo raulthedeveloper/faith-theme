@@ -38,7 +38,7 @@
                     <h2>About Ministry</h2>
                     <p>
         Faith To Faith Ministries held its first service at the Quality Inn, Stroudsburg, PA on April 22, 2012 and after 2 ½ years there we were able to move to our current location at 2035 Milford Road, East Stroudsburg, PA on October 25, 2014.  </p> 
-                    <div class="faith-btn-dark">Read More</div>
+                    <!-- <div class="faith-btn-dark">Read More</div> -->
                 </div>
             </div>
         </div>

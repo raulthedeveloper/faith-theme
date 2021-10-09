@@ -28,7 +28,7 @@
                                 $myposts = get_posts( $args );
                             ?>
 
-                          <a class="nav-link" href="<?php echo get_permalink($myposts[0]->ID); ?>">Word Xpress</a>
+                          <a class="nav-link" href="<?php echo get_permalink($myposts[0]->ID); ?>">The Word Xpress</a>
 
                                 
                         

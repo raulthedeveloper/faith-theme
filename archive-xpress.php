@@ -1,4 +1,4 @@
-<?php get_header('secondary',['header_var' => 'Word Xpress Archive']); ?>
+<?php get_header('secondary',['header_var' => 'The Word Xpress Archive']); ?>
 
 
 

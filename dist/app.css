@@ -455,8 +455,9 @@
   background-color: #AA7BAB;
 }
 .faith-btn-light:hover {
-  background-color: #9559a0;
+  background-color: #450850;
   color: white;
+  border: solid white 2px;
 }
 
 .faith-btn-dark {
@@ -470,8 +471,9 @@
   background-color: purple;
 }
 .faith-btn-dark:hover {
-  background-color: #9559a0;
+  background-color: #450850;
   color: white;
+  border: solid white 2px;
 }
 
 html {
@@ -507,8 +509,9 @@ h5 {
   background-color: #AA7BAB;
 }
 .submit:hover {
-  background-color: #9559a0;
+  background-color: #450850;
   color: white;
+  border: solid white 2px;
 }
 
 .wp-block-image:not(.is-style-rounded) img {
@@ -557,8 +560,9 @@ h5 {
   background-color: #AA7BAB;
 }
 .hero-btn-box button:hover {
-  background-color: #9559a0;
+  background-color: #450850;
   color: white;
+  border: solid white 2px;
 }
 
 .main-hero {
@@ -791,4 +795,48 @@ footer li {
     font-size: 2.1rem;
     font-weight: 300;
   }
+}
+.faith-contact-form .wpforms-submit-container {
+  margin: 10px;
+}
+.faith-contact-form #wpforms-146-field_0-container label {
+  margin-left: 10px;
+}
+.faith-contact-form #wpforms-146-field_0-container input {
+  margin-bottom: 1rem;
+}
+.faith-contact-form .wpforms-field-sublabel {
+  display: none;
+}
+.faith-contact-form .wpforms-field-row {
+  display: flex;
+}
+.faith-contact-form .wpforms-field-row label {
+  margin-left: 10px;
+}
+.faith-contact-form .wpforms-field-row input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+.faith-contact-form .wpforms-field-email {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+.faith-contact-form #wpforms-146-field_2-container {
+  margin-bottom: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.faith-contact-form .wpforms-field-medium {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  padding: 10px;
 }

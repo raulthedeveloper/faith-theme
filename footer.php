@@ -21,7 +21,7 @@
                                 $myposts = get_posts( $args );
                             ?>
 
-                          <a class="nav-link text-light" href="<?php echo get_permalink($myposts[0]->ID); ?>">Word Xpress</a>
+                          <a class="nav-link text-light" href="<?php echo get_permalink($myposts[0]->ID); ?>">The Word Xpress</a>
 
                                 
                         
@@ -51,7 +51,7 @@
                         <a class="nav-link text-light" href="<?php echo home_url() ?>/contact/" >Contact</a>
                     </li>
         </ul>
-        <p class="text-center text-light">&copy; 2021 Company, Inc</p>
+        <p class="text-center text-light">&copy; <?php echo "20" . date("y"); ?> Faith To Faith Ministries</p>
     </footer>
 </div>
 
@@ -59,6 +59,14 @@
 
 
 <?php wp_footer(  )?>
+
+<script>
+
+
+    
+
+
+</script>
 
 <script>
   AOS.init({
