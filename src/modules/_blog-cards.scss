@@ -143,6 +143,9 @@
 }
 
   @media only screen and (max-width:$medium){
+    .card-col{
+        width: 100%;
+    }
     .readmore a{
         width: 100%;
     }
@@ -154,6 +157,8 @@
 
 
 @media only screen and (max-width:$small){
+
+    
 
     .employee-image{
         border: none;

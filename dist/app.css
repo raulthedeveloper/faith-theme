@@ -261,6 +261,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .card-col {
+    width: 100%;
+  }
+
   .readmore a {
     width: 100%;
   }
