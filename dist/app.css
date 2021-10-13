@@ -83,6 +83,10 @@
   max-width: 200px;
 }
 
+.latest-post {
+  max-height: 650px;
+}
+
 .latest-post img {
   width: 100%;
   height: 100%;
@@ -497,6 +501,12 @@ h5 {
   font-size: 1.5rem;
 }
 
+.archive-title {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
 .comment-form-comment {
   display: flex;
   flex-direction: column;
@@ -681,6 +691,10 @@ footer li {
 }
 
 @media only screen and (max-width: 450px) {
+  .archive-title {
+    font-size: 2.5rem;
+  }
+
   p {
     font-size: 1rem;
   }

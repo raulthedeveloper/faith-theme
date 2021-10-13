@@ -1,6 +1,6 @@
 <?php get_header('secondary',['header_var' => 'Blog Archive']); ?>
 <div class="container">
-<h1 class="text-center"><?php echo single_cat_title(); ?></h1>
+<h1 class="text-center archive-title"><?php echo single_cat_title(); ?></h1>
 <?php get_template_part('includes/sections/section','archive' ); ?>
 
 <div class="d-flex justify-content-between mt-5">

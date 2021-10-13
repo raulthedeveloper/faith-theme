@@ -144,7 +144,7 @@
 
 <section class="blog-section" style="min-height:35vh;background:linear-gradient(90deg, rgba(35,35,35,0.61) 0%, rgba(0,0,0,0.32) 47%, rgba(0,0,0,0.35) 73%),url('<?php echo get_template_directory_uri(); ?>/images/hero_background.png'); background-repeat:no-repeat; background-size:cover">
     <div class="container">
-        <div class="row">
+        <div class="row" >
             <div class="col">
                 <h2>Blog</h2>
                 <h3>Check out our blog, and stay informed. We are constantly adding new articles. </h3>

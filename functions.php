@@ -158,7 +158,7 @@ function templateFeaturedImage($image){
     if($image){
         echo $image;
     }else{
-        echo"<img class=\"img-fluid\" src=\"{$unavailableImage}
+        echo"<img class=\"img-fluid\"  src=\"{$unavailableImage}
         \" alt=\"unavailable image\">" ;
     }
 }

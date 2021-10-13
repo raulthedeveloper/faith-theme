@@ -10,13 +10,14 @@
 
             $categories = get_the_category();
             $category_id = $categories[0]->cat_ID;
+            $title_length = strlen(get_the_title());
             ?>
 
             <div class="col-md-5">
                 <div class="jumbotron jumbotron-fluid blog-jumbotron">
                     <div class="container">
                         <span><?php echo get_the_date('l jS F, Y') ?></span>
-                        <h1 class="display-4"><?php the_title(); ?></h1>
+                        <h1 class="display-<?php echo $title_length > 20 ? 6 : 4?>"><?php the_title(); ?></h1>
                        <h5 class="lead">
                            <span class="d-block mb-2">
                            By: <?php echo wp_get_current_user()->data->display_name ?>
@@ -28,7 +29,7 @@
                     <?php 
                                 foreach($categories as $cat):?>
                                     
-                                    <a class="btn btn-dark mb-1" style="max-width: 35%;" href="<?php echo get_category_link($cat) ?>"><?php echo get_cat_name($cat->cat_ID ) ?></a>
+                                    <a class="btn btn-dark mb-1" href="<?php echo get_category_link($cat) ?>"><?php echo get_cat_name($cat->cat_ID ) ?></a>
                                     
 
                            <?php endforeach ?>
@@ -46,7 +47,7 @@
             <div class="col-md-7">
                 <?php if(has_post_thumbnail()): ?>
 
-                <img class="img-fluid w-100 h-100" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                <img class="img-fluid w-100" style="height:400px" src="<?php the_post_thumbnail_url(); ?>" alt="">
 
 
                 <?php endif?>
